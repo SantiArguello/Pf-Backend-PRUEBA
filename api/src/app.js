@@ -26,7 +26,7 @@ const mercadoPagoRoutes = require ("./routes/mercadoPago")
 
 const init = async () => {
   const server = new hapi.Server({
-    port: 3000,
+    port: 3001,
     host: "localHost",
   });
 
