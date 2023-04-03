@@ -23,11 +23,13 @@ const createComentarioResenaRoute = require("./routes/comentariosResenas")
 const especieRoutes = require("./routes/especies")
 const nodeMailerRoutes = require("./routes/nodeMailerRoute")
 const mercadoPagoRoutes = require ("./routes/mercadoPago")
+const port = process.env.PORT ;
 
 const init = async () => {
   const server = new hapi.Server({
-    port: 3001,
-    host: "localHost",
+    port: port,
+    host:"0.0.0.0"
+ 
   });
 
   await server.register({
